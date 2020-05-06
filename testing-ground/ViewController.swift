@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftSVG
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        
+        AF.request("https://jsonplaceholder.typicode.com/todos/1").response {
+            response in
+            
+            debugPrint(response)
+            
+        }
         
         let profileIcon = UIView(SVGNamed: "social")
         view.addSubview(profileIcon)
