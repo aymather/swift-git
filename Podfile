@@ -6,7 +6,6 @@ target 'testing-ground' do
   use_frameworks!
 
   # Pods for testing-ground
-  pod 'SwiftSVG'
   pod 'Alamofire'
 
 end

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftSVG
 import Alamofire
 
 class ViewController: UIViewController {
@@ -15,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .green
         
         AF.request("https://jsonplaceholder.typicode.com/todos/1").response {
             response in
@@ -23,9 +22,6 @@ class ViewController: UIViewController {
             debugPrint(response)
             
         }
-        
-        let profileIcon = UIView(SVGNamed: "social")
-        view.addSubview(profileIcon)
         
     }
 
