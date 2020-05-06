@@ -7,5 +7,6 @@ target 'testing-ground' do
 
   # Pods for testing-ground
   pod 'SwiftSVG'
+  pod 'Alamofire'
 
 end
